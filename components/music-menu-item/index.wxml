@@ -1,0 +1,8 @@
+<!--components/music-menu-item/index.wxml-->
+<view class="item">
+  <view class="top">
+    <image class="image" mode="widthFix" src="{{item.coverImgUrl}}"></image>
+    <view class="play-counter">{{item.palyCount}}</view>
+  </view>
+  <view class="bottom">{{item.name}}</view>
+</view>

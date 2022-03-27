@@ -1,0 +1,91 @@
+/* pages/home-music/index.wxss */
+page {
+  padding: 0 20rpx;
+}
+
+.van-search {
+  padding: 10px 0 !important;
+}
+
+.van-search__content {
+  background-color: #fff !important;
+}
+
+.swiper {
+  border-radius: 10rpx;
+  transform:translateY(0);
+  overflow: hidden;
+}
+
+.swiper-item {
+  display: flex;
+}
+
+.swiper .swiper-image {
+  width: 100%;
+}
+
+/* 播放工具栏 */
+.play-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20rpx;
+
+  background-color: #fafafa;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, .3);
+}
+
+.play-bar .left, .play-bar .right {
+  display: flex;
+  align-items: center;
+}
+
+.play-bar .left .album {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  position: relative;
+  top: -8px;
+}
+
+.play-bar .left .name {
+  margin-left: 16px;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.play-bar .right .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.play-bar .right .icon-play {
+  width: 25px;
+  height: 25px;
+  margin-right: 16rpx;
+}
+
+@keyframes ablumRotate {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.ablum-anim {
+  /* 线性、 无线循环 */
+  animation: ablumRotate 16s linear infinite; 
+}
+

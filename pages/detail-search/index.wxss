@@ -1,0 +1,76 @@
+/* pages/detail-search/index.wxss */
+
+page {
+  padding: 0 20rpx;
+  padding-top: 56px;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+}
+
+.hot-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hot-list .tags {
+  background-color: #fff;
+  font-size: 26rpx;
+  padding: 10rpx 12rpx;
+  border-radius: 16rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.hot-list .tags:last-of-type {
+  color: #26ce8a;
+}
+
+.suggest {
+  padding: 10rpx;
+}
+
+.suggest .title {
+  font-size: 34rpx;
+  color: #26ce8a;
+  font-weight: 700;
+}
+
+.suggest .item {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.suggest .item .icon {
+  width: 66rpx;
+  margin-left: -20rpx;
+}
+
+.suggest .item .text {
+  font-size: 28rpx;
+  display: 1;
+
+  /* 显示两行 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-line-clamp: 1;
+  -moz-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+}
+
+/* 搜索结果 */
+.result .title {
+  font-size: 34rpx;
+  color: #26ce8a;
+}
