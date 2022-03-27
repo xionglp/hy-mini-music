@@ -110,6 +110,12 @@ Page({
     playerStore.dispatch("changeMusicPlayStatusAction", !this.data.isPlaying);
   },
 
+  handlePlayBarClick() {
+    wx.navigateTo({
+      url: '/pages/music-player/index?id=' + this.data.currentSong.id,
+    })
+  },
+
   // 歌单item
   handleMenuItemClick(event) {
     console.log(event)

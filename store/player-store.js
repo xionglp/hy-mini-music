@@ -87,7 +87,7 @@ const playerStore = new HYEventStore({
         }
       });
 
-      // 监听播放完成，自动播放下一首歌曲
+      // 监听播放完成，自动播放下一首歌曲。
       audioContext.onEnded(() => {
         this.dispatch("changeNewMusicAction");
       });

@@ -25,6 +25,10 @@ page {
   width: 100%;
 }
 
+.play-bar-placeholder {
+  height: 44px;
+}
+
 /* 播放工具栏 */
 .play-bar {
   position: fixed;
