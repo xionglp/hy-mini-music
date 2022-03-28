@@ -12,7 +12,7 @@ App({
     deviceRatio: 0,     // 设备宽高比
   },
 
-  async onLaunch() {
+  onLaunch() {
     const sysInfo = wx.getSystemInfoSync();
     // console.log(sysInfo)
     this.globalData.screenWidth = sysInfo.screenWidth;
@@ -20,7 +20,6 @@ App({
     this.globalData.statusBarHeight = sysInfo.statusBarHeight;
     const ratio = sysInfo.screenHeight / sysInfo.screenWidth;
     this.globalData.deviceRatio = ratio;
-
     
     this.checkLoginAndLogin()
   },
