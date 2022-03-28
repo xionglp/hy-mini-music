@@ -61,7 +61,7 @@
   </view>
 </view>
 
-<!-- 播放工具栏 -->
+<!-- 播放工具栏11 -->
 <view class="play-bar-placeholder" wx:if="{{currentSong.id}}"></view>
 <view class="play-bar" wx:if="{{currentSong.id}}" bindtap="handlePlayBarClick">
   <view class="left">
