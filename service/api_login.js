@@ -42,3 +42,17 @@ export function checkSession() {
     })
   })
 }
+
+export function getUserInfo() {
+  return new Promise((resolve, reject) => {
+    wx.getUserProfile({
+      desc: 'desc',
+      success: res => {
+        resolve(res)
+      }, 
+      fail: err => {
+        reject(err)
+      }
+    })
+  })
+}
