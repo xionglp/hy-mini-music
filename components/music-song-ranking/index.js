@@ -16,7 +16,7 @@ Component({
       const id = event.currentTarget.dataset.item.id;
       playerStore.dispatch("playMusicWithSongIdAction", { id });
       wx.navigateTo({
-        url: '/pages/music-player/index?id=' + id,
+        url: '/packagePlayer/pages/music-player/index?id=' + id,
       })
     }
   }

@@ -120,19 +120,19 @@ Page({
   handleMenuItemClick(event) {
     console.log(event)
     wx.navigateTo({
-      url: `/pages/detail-songs/index?type=menu&id=${event.detail.id}`,
+      url: `/packageDetail/pages/detail-songs/index?type=menu&id=${event.detail.id}`,
     })
   },
 
   navigateToDetailSongsPage(rankingName) {
     wx.navigateTo({
-      url: `/pages/detail-songs/index?type=rank&ranking=${rankingName}`,
+      url: `/packageDetail/pages/detail-songs/index?type=rank&ranking=${rankingName}`,
     })
   },
 
   handleSearchClick: function() {
     wx.navigateTo({
-      url: '../detail-search/index',
+      url: '/packageDetail/pages/detail-search/index',
     })
   }
 })
