@@ -21,7 +21,7 @@ App({
     const ratio = sysInfo.screenHeight / sysInfo.screenWidth;
     this.globalData.deviceRatio = ratio;
     
-    this.checkLoginAndLogin()
+    // this.checkLoginAndLogin()
   },
 
   checkLoginAndLogin: async function() {
